@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace SpecFlowStart.Steps
+{
+    public class EmployeeDetails
+    {
+
+        public String Name{get; set;}
+        public String Phone { get; set; }
+        public String Age { get; set; }
+        public String Email { get; set; }
+
+    }
+}
