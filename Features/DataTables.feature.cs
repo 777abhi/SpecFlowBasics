@@ -25,7 +25,7 @@ namespace SpecFlowStart.Features
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "SpecFlowFeature1.feature"
+#line 1 "DataTables.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
