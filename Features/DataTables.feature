@@ -10,6 +10,7 @@ Scenario: Add two numbers
 	When I press add
 	Then the result should be 120 on the screen
 
+@DataTables
 Scenario: Create a new employee with mandatory details
 	#Given : I have opened my application
 	#Then : I should see the employee details page
@@ -22,6 +23,8 @@ Scenario: Create a new employee with mandatory details
 	#And : I click the same button
 	#Then : I should see the details saved in application and DB
 
+	
+@DataTables2
 Scenario Outline: Create a new employees with mandatory details 
 	#Given : I have opened my application
 	#Then : I should see the employee details page
