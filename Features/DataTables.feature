@@ -1,7 +1,7 @@
-﻿Feature: SpecFlowFeature1
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+﻿Feature: Display the usage of DataTables in SpecFlow
+	In order to understand how data tables are used in specflow
+	As a programmer
+	I want to write scenarios & scenario outlines 
 
 @SmokeTest
 Scenario: Add two numbers
