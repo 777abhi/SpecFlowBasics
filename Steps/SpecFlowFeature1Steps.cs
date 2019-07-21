@@ -1,4 +1,6 @@
-﻿using SpecFlowStart.Steps;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using SpecFlowStart.Steps;
 using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
@@ -38,7 +40,6 @@ namespace ConsoleApp2
             //Console.WriteLine(details.Age);
             //Console.WriteLine(details.Email);
             //Console.WriteLine(details.Phone);
-
 
             var details = table.CreateSet<EmployeeDetails>();
 
