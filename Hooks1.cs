@@ -13,9 +13,9 @@ namespace SpecFlowStart
     [Binding]
     public sealed class Hooks1
     {
-        private static ExtentTest featureName;
-        private static ExtentTest scenario;
-        private static ExtentReports extent;
+        //private static ExtentTest featureName;
+        //private static ExtentTest scenario;
+        //private static ExtentReports extent;
 
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
 
@@ -27,7 +27,7 @@ namespace SpecFlowStart
                "/" +
                "/BeforeScenario");
 
-            scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
+            //scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
 
         }
 
@@ -42,33 +42,33 @@ namespace SpecFlowStart
         [BeforeTestRun]
         public static void InitializeReport()
         {
-            var htmlReporter = new ExtentHtmlReporter(@"C:\Ereport.html");
+            //var htmlReporter = new ExtentHtmlReporter(@"C:\Ereport.html");
 
             
-            var extent = new ExtentReports();
-            extent.AttachReporter(htmlReporter);
+            //var extent = new ExtentReports();
+            //extent.AttachReporter(htmlReporter);
 
-            // description
-            extent.CreateTest("MyFirstTest", "Test Description").Pass("details");
-            extent.Flush();
+            //// description
+            //extent.CreateTest("MyFirstTest", "Test Description").Pass("details");
+            //extent.Flush();
         }
 
         [AfterTestRun]
         public static void TeatDownReport()
         {
-            extent.Flush();
+            //extent.Flush();
         }
 
         [BeforeFeature]
         public static void BeforeFeature()
         {
-            featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
+            //featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
         }
 
         [AfterStep]
         public static void InsertReportingSteps()
         {
-            scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);         
+           // scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);         
         }
     }
 }
