@@ -25,6 +25,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DataTables.feature</DependentUpon>
     </Compile>
+    <Compile Update="Features\View Collection in Csharp.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>View Collection in Csharp.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +43,10 @@
     <SpecFlowFeatureFiles Update="Features\DataTables.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DataTables.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\View Collection in Csharp.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>View Collection in Csharp.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
   </ItemGroup>
 
