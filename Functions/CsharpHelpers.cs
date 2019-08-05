@@ -6,8 +6,12 @@ namespace SpecFlowStart.Functions
 {
     static class CsharpHelpers
     {
-        public static void simpleCollection() {
-            var salmos = new List<string>
+
+        static List<string> salmos;
+
+        public static void simpleCollection()
+        {
+             salmos = new List<string>
             {
                 "Abhinav",
                 "Pinky",
@@ -19,9 +23,36 @@ namespace SpecFlowStart.Functions
             };
             salmos.Add(DateTime.Now.ToString());
 
-            foreach (var doc in salmos) {
+        }
+        internal static void simpleCollectionAdd(string newElement)
+        {
+             salmos = new List<string>
+            {
+                "Abhinav",
+                "Pinky"
+            };
+            salmos.Add(newElement);
+            
+        }
+
+        internal static void simpleCollectionView(string newElement)
+        {
+            int testResult = 0;
+            
+            foreach (var doc in salmos)
+            {
                 Console.WriteLine(doc);
+                if (doc.Equals(newElement)){
+                    testResult = 1;
+                    break;
+                }
+                   
             }
+
+            if (testResult == 0) {
+                throw new Exception("Test Failed, new element not found : "+newElement);
+            }
+
         }
     }
-}
+    }
